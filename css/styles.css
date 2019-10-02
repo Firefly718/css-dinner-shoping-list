@@ -1,0 +1,167 @@
+* {
+    transition: all .1s ease-in;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: #3b3f45;
+    margin: 0px;
+    padding: 0px;
+    border: 15px solid white;
+    height: 100%;
+    min-height: 100%;
+}
+
+
+
+
+
+
+
+header {
+    background: #4a4f56;
+    color: #ce767c;
+    text-align: center;
+    width: 100%;
+    padding: 1px 3px;
+}
+
+h1 {
+    font-family: 'Trebuchet MS', Trebuchet, Arial, sans-serif;
+    font-size: 30px;
+}
+
+h3 {
+    font-family: sans-serif;
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+
+
+
+
+
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+ul {
+    font-size: 19px;
+    padding: 0 0 0 0;
+    margin: 30 0 auto;
+    /*После пэдинга и мэрджина список выровнялся по центру относительно нижней кнопки*/
+}
+
+li {
+    list-style-type: none;
+    padding: 0px 0px;
+    vertical-align: center; 
+}
+
+li:nth-child(2n) {
+    background: #7a7593;
+    border-top: 3px solid #7a7593;
+    border-bottom: 3px solid #7a7593;
+}
+
+li:nth-last-child(2n) {
+    background: #88839e;
+    border-top: 3px solid #88839e;
+    border-bottom: 3px solid #88839e;
+}
+
+li:hover {
+    background-color: #5e6171;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+}
+
+li:active {
+    background-color: #ce767c;
+}
+
+input:checked~span {
+    /*при добавлении ~span правила начали работать*/
+    text-decoration: line-through;
+    color: #9a99ad;
+}
+
+label {
+    display: inline-block;
+    width: 100%;
+    /*вместо верхних 2-х строк можно использовать одну display: block;*/
+    padding: 15px 0;
+    /*inline-block делает элемент label блочным элементом, чтобы можно было клацнуть на пустое метсто, где расположен элемент li и активировать checkbox*/
+}
+
+
+
+
+
+span + span {
+    color: #c7c0c7;
+    font-size: 13px;
+}
+
+
+span {
+    font-family: arial;
+}
+
+[id="strong"] {
+    color: white;
+    font-size: 20px;
+}
+
+[id="small"]:before {
+    content: '(';
+}
+
+[id="small"]:after {
+    content: ')';
+}
+
+
+
+
+
+
+footer {
+    text-align: center;
+}
+
+button {
+    background: #4A4F56;
+    color: #ce767c;
+    width: 60%;
+    margin: 10px 0 auto;
+    padding: 0px 0px;
+    border: #4A4F56;
+}
+
+button :hover {
+    background: #5e6171;
+}
+
+.display {
+    display: inline-block;
+    width: 100%;
+    font-size: 20px;
+    padding: 15px 0px;
+}
+
+/*1. как убрать эффект гармошки = создать изначально верхнюю и ниж границу с цветом li, но при наведении применить hover, чтобы, уже созданные границы, меняли цвет на белый;
+
+2. как выровнять белую рамку по ширине экрана = прописать правило box-sizing: border-box;
+
+3. как убрать border у span элементов при наведении на них = убрать пробел при обращении к hover (li:hover). Пробел меняет правило так, что hover применяется не только для li, но и для дочерних элементов.
+
+*/

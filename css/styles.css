@@ -145,17 +145,13 @@ button {
     padding: 0px 0px;
     border: #4A4F56;
     margin-bottom: 15px;
-}
-
-button :hover {
-    background: #5e6171;
-}
-
-.display {
     display: inline-block;
-    width: 100%;
     font-size: 20px;
     padding: 15px 0px;
+}
+
+button:hover {
+    background: #5e6171;
 }
 
 /*1. как убрать эффект гармошки = создать изначально верхнюю и ниж границу с цветом li, но при наведении применить hover, чтобы, уже созданные границы, меняли цвет на белый;

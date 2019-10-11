@@ -4,7 +4,7 @@
 }
 
 html {
-    height: 100%;
+    height: 100vh;
 }
 
 body {
@@ -12,8 +12,7 @@ body {
     margin: 0px;
     padding: 0px;
     border: 15px solid white;
-    height: 100%;
-    min-height: 100%;
+    min-height: 100vh;
 }
 
 
@@ -98,7 +97,7 @@ label {
     display: inline-block;
     width: 100%;
     /*вместо верхних 2-х строк можно использовать одну display: block;*/
-    padding: 15px 0;
+    padding: 15px 10px;
     /*inline-block делает элемент label блочным элементом, чтобы можно было клацнуть на пустое метсто, где расположен элемент li и активировать checkbox*/
 }
 
@@ -145,6 +144,7 @@ button {
     margin: 10px 0 auto;
     padding: 0px 0px;
     border: #4A4F56;
+    margin-bottom: 15px;
 }
 
 button :hover {

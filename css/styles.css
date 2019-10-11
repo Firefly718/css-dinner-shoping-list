@@ -115,16 +115,16 @@ span {
     font-family: arial;
 }
 
-[id="strong"] {
+.strong {
     color: white;
     font-size: 20px;
 }
 
-[id="small"]:before {
+.small:before {
     content: '(';
 }
 
-[id="small"]:after {
+.small:after {
     content: ')';
 }
 
